@@ -1,0 +1,13 @@
+<header>
+    <h1>All Contacts</h1>
+    <figure class="add">
+        <a ui-sref="add"><span></span><span></span></a>
+    </figure>
+</header>
+<ul class="contact-list">
+    <li ng-repeat="c in vm.contacts">
+        <a ui-sref="single({ id: c._id })">
+            {{ c.firstName }} {{ c.lastName }}
+        </a>
+    </li>
+</ul>

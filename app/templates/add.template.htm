@@ -1,0 +1,32 @@
+<header>
+    <h1>New Contact</h1>
+    <figure class="cancel">Cancel</figure>
+    <figure class="done disabled">Done</figure>
+</header>
+<section class="photo">
+    <img>
+    <span>edit photo</span>
+</section>
+<section class="name">
+    <p class="first"></p>
+    <p class="last"></p>
+</section>
+<section class="phone">
+    <input type="tel" value="{{ vm.contact.phone }}">
+</section>
+<section class="mobile">
+    <input type="tel" value="{{ vm.contact.mobile }}">
+</section>
+<section class="email">
+    <input type="email" value="{{ vm.contact.email }}">
+</section>
+
+<form ng-submit="vm.addGif(gif)">
+  <p class="control">
+    <input type="text" class="input" placeholder="Gif Name" ng-model="gif.name">
+  </p>
+  <p class="control">
+    <input type="text" class="input" placeholder="Gif URL" ng-model="gif.url">
+  </p>
+  <button class="button">Add Gif</button>
+</form>
